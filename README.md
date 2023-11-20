@@ -12,6 +12,11 @@ For example:
       - Annotations
       - ImageSets
       - JPEGImages
+  - foggy_cityscapes_voc
+    - VOC2007
+      - Annotations
+      - ImageSets
+      - JPEGImages
 
 2. Put your pre-trained VLM model at somewhere you like, for example, './ckpt', and edit the MODEL.WEIGHTS in train_da_pro_c2f.sh.
 
@@ -19,6 +24,8 @@ For example:
 
 4. Training: train_da_pro_c2f.sh  Testing: test_da_pro_c2f.sh
 Training is customizable. You can directly use the parameters of other VLMs as backbone and then adjust only domain-adaptive prompt. You can also follow the steps of Regionclip to customize a backbone on your own dataset, then conduct adaptation.
+
+
 A training sample: 
 1) Initial pre-trained model with VLM (like CLIP or RegionCLIP).
 2) Set LEARNABLE_PROMPT.TUNING to False to fine-tune the pre-trained backbone with domain adversarial loss.
