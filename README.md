@@ -19,8 +19,7 @@ For example:
 
 4. Training: train_da_pro_c2f.sh  Testing: test_da_pro_c2f.sh
 Training is customizable. You can directly use the parameters of other VLMs as backbone and then adjust only domain-adaptive prompt. You can also follow the steps of Regionclip to customize a backbone on your own dataset, then conduct adaptation.
-
 A training sample: 
-4.1 Initial pre-trained model with VLM (like CLIP or RegionCLIP).
-4.2 Set LEARNABLE_PROMPT.TUNING to False to fine-tune the pre-trained backbone with domain adversarial loss.
-4.3 Set LEARNABLE_PROMPT.TUNING to True to freeze the backbone and tune a learnable domain-adaptive prompt on two domains. 
+1) Initial pre-trained model with VLM (like CLIP or RegionCLIP).
+2) Set LEARNABLE_PROMPT.TUNING to False to fine-tune the pre-trained backbone with domain adversarial loss.
+3) Set LEARNABLE_PROMPT.TUNING to True to freeze the backbone and tune a learnable domain-adaptive prompt on two domains. 
