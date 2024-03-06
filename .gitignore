@@ -61,6 +61,7 @@ _darcs
 !/datasets/custom_images/*.jpg
 !/docs
 !/docs/*.*
+!/detectron2/data/
 /projects/*/datasets
 /models
 /snippet
